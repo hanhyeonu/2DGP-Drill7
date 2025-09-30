@@ -26,7 +26,12 @@ class Boy:
         self.frame = (self.frame + 1) % 8
         self.x += 5
 
-
+class Ball:
+    def __init__(self,size):        # size 를 인자로 하나 더 던져줄 수 있네.
+        if size == 'small':
+            self.image = load_image('ball21x21.png')
+        else:
+            self.image = load_image('ball41x41.png')
 
 def reset_world():
     global running
