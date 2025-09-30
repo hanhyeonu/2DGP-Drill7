@@ -68,7 +68,6 @@ def reset_world():
     global balls
     balls = [Ball('small') for i in range(10)] + [Ball('big') for i in range(10)] # 작은공, 큰공 객체를 하나의 class로 못만들까?
 
-
 def update_world():
     for game_object in world:
         game_object.update()
