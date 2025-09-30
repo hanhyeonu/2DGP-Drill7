@@ -33,6 +33,10 @@ class Ball:
         else:
             self.image = load_image('ball41x41.png')
 
+        self.x = random.randint(0, 800) # 0~ 800 랜덤하게 설정
+        self.y = 599 # 599 고정.
+
+
 def reset_world():
     global running
     running = True
@@ -47,7 +51,7 @@ def reset_world():
     world += team
 
     global balls
-    balls = [Ball() for i in range(10)] + [Ball() for i in range(10)] # 작은공, 큰공 객체를 하나의 class로 못만들까?
+    balls = [Ball('small') for i in range(10)] + [Ball('big') for i in range(10)] # 작은공, 큰공 객체를 하나의 class로 못만들까?
 
 
 def update_world():
