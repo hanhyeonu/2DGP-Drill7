@@ -1,6 +1,8 @@
 from pico2d import *
 import random
 
+# __init__() 에 인자 전달하는 방법 아래의 링크에 나와있으니까 까먹으면 공부하자.
+# https://writingstudio.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%ACPython-%ED%81%B4%EB%9E%98%EC%8A%A4class-%EC%95%88-def-initself-%EC%99%80-self-%EB%93%B1%EC%9D%84-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0#google_vignette
 
 class Grass:
     def __init__(self):
