@@ -39,6 +39,10 @@ class Ball:
     def draw(self):
         self.image.draw(self.x,self.y) # frame 없이 이동만 할거니까.
 
+    def update(self):
+        self.y -= random.randint(1,5)  # 1~5 속도로 랜덤하게 떨어짐.
+
+
 def reset_world():
     global running
     running = True
