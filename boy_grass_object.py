@@ -27,6 +27,7 @@ class Boy:
         self.x += 5
 
 
+
 def reset_world():
     global running
     running = True
@@ -39,6 +40,9 @@ def reset_world():
     global team
     team = [Boy() for i in range(11)]
     world += team
+
+    global balls
+    balls = [Ball() for i in range(10)] + [Ball() for i in range(10)] # 작은공, 큰공 객체를 하나의 class로 못만들까?
 
 
 def update_world():
